@@ -1,0 +1,35 @@
+/* *** Insertion Sort Procedure *** */
+PROCEDURE insertion_sort(VAR arr : ARRAY_OF INTEGER)
+VAR
+   n,i,j,tmp : INTEGER;
+BEGIN
+   n := arr.length;
+   FOR i FROM 0 TO n DO
+      tmp:=arr[i]; //We stock arr[i] in tmp in order not to lose it when we move the elements
+      j := i - 1; //Each time work only with the first i-1 element from of the array
+        /* Move the elements of arr, that are greater than arr[i] (stored in tmp), to one position ahead of their current one */
+        WHILE (j >= 0 and arr[j] > tmp) DO
+            arr[j + 1] := arr[j]; //swap the elements if tmp<arr[j]
+            j := j - 1;//decrease j to continue comparing with the sorted elements
+        END_WHILE   
+        arr[j + 1] = tmp; // insert tmp (arr[i]) into its place in the sorted sequence in the array
+   END_FOR
+END
+/* *** Insertion Sort Algorithm *** */
+ALGORITHM InsertionSort
+VAR
+    n,i:INTEGER;
+    V1:ARRAY_OF INTEGER[n];
+BEGIN
+    //Read the array
+    Write("Give the length of the array") ; Read(n);
+    Write("Give the elements of the array") 
+    FOR i FROM 0 TO n-1 DO
+       Read(V1[i]);
+    END_FOR
+    Write("the original unsorted array",V1) ; 
+    //Sort the array
+    insertion_sort(V1,n);
+    //Display the sorted array
+    Write("the final sorted array",V1) ; 
+END

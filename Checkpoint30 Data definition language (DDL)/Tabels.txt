@@ -1,0 +1,26 @@
+//You are asked to create the above given relational model using SQL language 
+//and based on the different mentioned constraints.
+
+CREATE TABLE Customer (
+	customer_ID VARCHAR2(20) PRIMARY KEY,
+	customer_Name VARCHAR2(20) NOT NULL,
+	customer_ID NUMBER,
+);
+CREATE TABLE Product (
+	product_ID VARCHAR2(20) PRIMARY KEY,
+	product_Name VARCHAR2(20) NOT NULL,
+	price NUMBER CHECK (price > 0)
+);
+CREATE TABLE Orders (
+   	CONSTRAINT fk_Orders1 FOREIGN KEY (customer_ID) REFERENCES Customer (customer_ID),
+   	CONSTRAINT fk_Orders2 FOREIGN KEY (product_ID) REFERENCES Product (product_ID),
+    quantity NUMBER,
+	total_Amount NUMBER,
+);
+
+//Add a column Category (VARCHAR2(20)) to the PRODUCT table. 
+//ALTER TABLE table_name ADD column1 column_type, column2 column_type;
+	ALTER TABLE Product ADD Category VARCHAR2(20);
+
+//Add a column OrderDate (DATE)  to the ORDERS table which have SYSDATE as a default value.
+	ALTER TABLE Orders ADD Order_Date DATE DEFAULT SYSDATE();

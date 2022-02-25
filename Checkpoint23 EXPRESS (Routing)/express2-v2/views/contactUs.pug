@@ -1,0 +1,25 @@
+extends layout 
+block content
+    div.container
+        if(isopen === true)
+            div.row
+                div.col.col1.d-flex.flex-column.justify-content-center
+                    h1 We'd love to hear from you! 
+                    br
+                    img(src="https://www.baliwebstation.com/wp-content/uploads/2017/12/get-in-touch.jpg" alt="get in touch")
+                div.col.col2.d-flex.flex-column.justify-content-center
+                    div.form-floating.mb-3
+                        input(type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="width: 80%")
+                        label(for="floatingInput") Full Name
+                    div.form-floating.mb-3
+                        input(type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="width: 80%")
+                        label(for="floatingInput") Email address
+                    div.form-floating.mb-3
+                        textarea(class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px; width: 80%")
+                        label(for="floatingTextarea2") Message
+                    div.form-floating.mb-3
+                        button(type="button" class="btn btn-secondary") Submit
+        else 
+            h1 Sorry We'are closed!
+            p The web application is only available during working hours (Monday to Friday,  from 9 to 17).
+            img(src="https://www.pngkey.com/png/full/14-142291_this-free-icons-png-design-of-sorry-were.png" width="500px" alt="get in touch")

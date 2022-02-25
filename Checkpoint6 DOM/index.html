@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkpoint6 DOM Shopping cart</title>
+    <!--*************Bootstrp***********-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!--*************Fonts***********-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!--*************Font awesome***********-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--*************My CSS ***********-->
+    <link rel="stylesheet" href="styledom.css" />
+  </head>
+  <body>
+    <header>
+      <!--***********the navbar from bootstrap************-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">MyShop</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mon panier</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--************************* Intro ****************************-->
+      <div class="intro">
+        <h1><b>Mon panier</b></h1>
+        <br>
+        <i class="fas fa-shopping-cart" style="font-size: 50px;"></i>
+      </div>
+      <!--************************* produits ****************************-->
+    <div class="allproducts">
+        <!----*****produit1-->
+        <div class="prod">
+          <div class="imageplusmoins">
+            <!--**** image du produit ****-->
+            <img
+              src="maestro-Passion 5500.jpg"
+              alt="..."
+              width="150px"
+            />
+            <!--**** bouton +- ***-->
+            <div class="btn" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary+ btnplus">
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-plus-circle"></i>
+              </button>
+              <button type="button" class="btn btn-primary- btnmoins">
+                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+          <!--**** nom et description du produit ***-->
+          <div class="card">
+            <h5 class="cardtext"><b>MAESTRO PASSION </b></h5>
+            <p class="cardtext"> 
+              Avec Maestro Passion, un nouveau succès gourmand qui réunit tout le savoir-faire de Maestro. Un bonbon très généreux, enrobé d’un chocolat succulent et rempli d’une exquise crème à la noisette. Un mélange inédit de douceur et de gourmandise.
+            </p>
+            <!--**** quantite et prix ***-->
+            <div class="quantiteetprix">
+              <div class="quantiteaff">
+                <p><b>Quantité: </b></p>
+                <p class="quantitepart">0</p>
+              </div>
+              <div class="prixaff">
+                <p ><b>Prix: </b></p>
+                <p class="prixpart">0</p>
+              </div>
+            </div>
+            <!--**** boutons j'aime et supprimer ***-->
+            <div class="likeorremove">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+          </div>
+          <div class="cardfooter"></div>
+        </div>
+        <!----*****produit2-->
+        <div class="prod prod2">
+          <div class="imageplusmoins">
+            <!--**** image du produit ****-->
+            <img
+              src="chocolat-fourre-club-45gr-noisette 1500.jpg"
+              alt="..."
+              width="150px"
+            />
+            <!--**** bouton +- ***-->
+            <div class="btn" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary+ btnplus">
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-plus-circle"></i>
+              </button>
+              <button type="button" class="btn btn-primary- btnmoins">
+                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+          <!--**** nom et description du produit ***-->
+          <div class="card">
+            <h5 class="cardtext"><b>MAESTRO Club</b></h5>
+            <p class="cardtext">
+              Vous vous demandez ce que Club peut bien avoir de plus qu’un chocolat ordinaire ? Et bien, Club, c’est tout l’arôme et le fondant d’un chocolat fourré d’exquises crèmes qui se déclinent dans toutes les saveurs : cornflakes, cappuccino, noisettes, caramel. Un concentré de gourmandise et de finesse qui vous fera fondre, sans aucun doute.            </p>
+            <!--**** quantite et prix ***-->
+            <div class="quantiteetprix">
+              <div class="quantiteaff">
+                <p><b>Quantité: </b></p>
+                <p class="quantitepart">0</p>
+              </div>
+              <div class="prixaff">
+                <p ><b>Prix: </b></p>
+                <p class="prixpart">0</p>
+              </div>
+            </div>
+            <!--**** boutons j'aime et supprimer ***-->
+            <div class="likeorremove">
+              <i class="fas fa-heart fa-heart2"></i>
+              <i class="fas fa-trash-alt fa-trash-alt2"></i>
+            </div>
+          </div>
+          <div class="cardfooter"></div>
+        </div>
+        <!----*****produit3-->
+        <div class="prod prod3">
+          <div class="imageplusmoins">
+            <!--**** image du produit ****-->
+            <img
+              src="maestro-crisponuts 950.jpg"
+              alt="..."
+              width="150px"
+            />
+            <!--**** bouton +- ***-->
+            <div class="btn" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary+ btnplus">
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-plus-circle"></i>
+              </button>
+              <button type="button" class="btn btn-primary- btnmoins">
+                <i class="fas fa-minus-circle"></i>
+                <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+          <!--**** nom et description du produit ***-->
+          <div class="card">
+            <h5 class="cardtext"><b>CRISPONUTS </b></h5>
+            <p class="cardtext">
+              Crispo nuts, enfin un goûter qui change de l’ordinaire. En ouvrant son emballage individuel, vous découvrez d’abord un généreux nappage de chocolat. En mordant dans la barre, vous rencontrez de délicieux petits éclats de noisettes puis, soudain, une sensation de légèreté vous envahit...
+            </p>
+            <!--**** quantite et prix ***-->
+            <div class="quantiteetprix">
+              <div class="quantiteaff">
+                <p><b>Quantité: </b></p>
+                <p class="quantitepart">0</p>
+              </div>
+              <div class="prixaff">
+                <p ><b>Prix: </b></p>
+                <p class="prixpart">0</p>
+              </div>
+            </div>
+            <!--**** boutons j'aime et supprimer ***-->
+            <div class="likeorremove">
+              <i class="fas fa-heart fa-heart3"></i>
+              <i class="fas fa-trash-alt fa-trash-alt3"></i>
+            </div>
+          </div>
+          <div class="cardfooter"></div>
+        </div>
+    </div>
+      <!--**************************** Total *****************************-->
+      <div class="total">
+        <p><b>Total TTC:</b></p>
+        <p id="prixtotttc">0</p>
+      </div>
+    </main>
+    <footer>
+      <p>Recevez nos offres spéciales</p>
+    </footer>
+    <!--************************************ Scripts *********************************************-->
+    <script src="dom.js"></script>
+    <!--font awesome-->
+    <script
+      src="https://kit.fontawesome.com/9268a2165b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--*********************************************************************************-->
+  </body>
+</html>

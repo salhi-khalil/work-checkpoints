@@ -1,0 +1,82 @@
+.App {
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+.AppTitle{
+  padding: 50px;
+}
+h1 {
+  font-family: "Pattaya", sans-serif;
+}
+.MyNavbar {
+  font-family: "Montserrat", sans-serif;
+  color: beige;
+  background-color: rgb(83, 119, 143);
+}
+.Footer {
+  color: rgb(83, 119, 143);
+  background-color: rgb(224, 224, 224);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+.Task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn1 {
+  width: 500px;
+  margin-right: 5px;
+}
+.btn2 {
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.TaskItem{
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.TaskItemName{
+  width:60%
+}
+
+.AddTask {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.ListTasks{
+  margin: auto;
+  width: 80%;
+}
+.NewTask{
+  display: flex;
+  justify-content: space-between;
+}
+.cardBody,.NewTask{
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(151, 193, 221,0.5);
+  padding: 20px;
+  margin:5px;
+}
+btns3{
+  display: flex;
+  justify-content: right;
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pattaya', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/

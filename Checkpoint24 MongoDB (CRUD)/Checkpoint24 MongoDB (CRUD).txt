@@ -1,0 +1,48 @@
+Objective:
+**********
+In this checkpoint, the main idea is to manipulate MongoDB CRUD operations
+
+   ++ Create a database called "contact"
+   ++ Create a collection called "contactlist"
+   ++ Insert these documents  in "contactlist" :
+          - LastName: Ben Lahmer, FirstName: Fares, Email: fares@gmail.com, age:26
+          - LastName: Kefi, FirstName: Seif, Email: kefi@gmail.com, age:15
+          - LastName: Fatnassi, FirstName: Sarra, Email: sarra.f@gmail.com, age:40
+          - LastName: Ben Yahia, FirstName: Rym, age:4
+          - LastName: Cherif, FirstName: Sami, age:3
+
+_____________________________________________________
+Instructions:
+*************
+Display all of the contacts list. 
+                //db.contactlist.find().pretty()
+Display all the information about only one person using his ID. 
+                //db.contactlist.find({_id: ObjectId("60c88805343acfe144f2e48d")})
+Display all the contacts with an age >18. 
+               //db.contactlist.find({age:{$gt:18}})
+Display all the contacts with an age>18 and name containing "ah". 
+               //db.contactlist.find({LastName:{$regex:"ah"},age:{$gt:18}})
+Delete the contacts that are aged under <5.
+               //db.contactlist.find({age:{$lt:5}})
+               //db.contactlist.deleteMany({age:{$lt:5}})
+Display all of the contacts list.
+               //db.contactlist.find().pretty()
+               
+NB: You have to save your work as screenshots.
+___________________________________
+
+db.contactlist.insertMany(
+[{LastName:"Ben Lahmer", FirstName:"Fares", Email:"fares@gmail.com", age:26},
+{LastName:"Kefi", FirstName:"Seif", Email:"kefi@gmail.com", age:15},
+{LastName:"Fatnassi", FirstName:"Sarra", Email:"sarra.f@gmail.com", age:40},
+{LastName:"Ben Yahia", FirstName:"Rym", age:4},
+{LastName:"Cherif", FirstName:"Sami", age:3}])
+
+_____________________________________________________
+{
+        "_id" : ObjectId("60c88805343acfe144f2e48d"),
+        "LastName" : "Ben Lahmer",
+        "FirstName" : "Fares",
+        "Email" : "fares@gmail.com",
+        "age" : 26
+}

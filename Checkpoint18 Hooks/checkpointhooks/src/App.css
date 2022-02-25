@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  color: rgb(8, 8, 44);
+}
+.Navbar,
+.Add {
+  font-family: "Montserrat", sans-serif;
+}
+.MovieCard {
+  margin: 10px;
+}
+.MovieList {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer{
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}

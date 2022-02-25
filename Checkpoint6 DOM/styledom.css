@@ -1,0 +1,66 @@
+/****************************/
+* {
+  font-family: "Mali", cursive;
+  padding: 0px;
+  margin: 0px;
+}
+/************ Intro ****************/
+.intro {
+  text-align: center;
+  padding: 100px;
+}
+/****************************/
+.quantiteetprix,
+.likeorremove {
+  padding: 10px;
+  align-items: center;
+  border-top: #dfdfdf solid 1px;
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+}
+/************ Les Produits ****************/
+.cardfooter {
+  display: flex;
+  justify-content: space-between;
+}
+.prod {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  padding: 25px;
+  width: 800px;
+}
+.imageplusmoins {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer {
+  border-top: #dfdfdf solid 1px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*******************************************************************/
+#cart-outline {
+  color: blue;
+}
+/**********************************************/
+.total {
+  padding: 15px;
+  border: #dfdfdf solid 1px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 50px; margin-bottom: 50px;
+  width:1050px;
+}
+/********************/
+.prixaff, .quantiteaff{
+    display: flex;
+    justify-content: space-between;
+}

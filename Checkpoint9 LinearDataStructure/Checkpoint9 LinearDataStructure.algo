@@ -1,0 +1,137 @@
+//********************************************************************************************************** */
+//Problem1, Solution1
+ALGORITHM sum_distinct_numbers_1
+VAR
+    Set1, Set2 : ARRAY_OF [50];
+    i,j,sum :INTEGER :=0;
+    equal: BOOLEAN;
+BEGIN
+ Write("Enter the first set"); Read(Set1);
+ Write("Enter the second set"); Read(Set2);
+//loop the elements of the 1st set comparing each one with all the elements of the 2nd set
+FOR i FROM 0 TO Set1.length-1 STEP 1  DO
+equal:=false;
+    FOR j FROM 0 TO Set2.length-1 STEP 1  DO
+        IF (Set1[i] = Set2[j]) THEN   //if we find a common element
+            Set2[j]:=0;  
+            equal := true; //we change it to 0 in set 2 and change the value of equal to true
+        END_IF
+        IF (equal = true) THEN
+            Set1[i]:=0;  //we change the value of the element in set1 to 0 if equal=true
+        END_IF
+    END_FOR
+END_FOR
+//Now that we have 2 unique sets we sum their elements
+FOR i FROM 0 TO Set1.length-1 STEP 1  DO
+    sum := sum + Set1[i];
+END_FOR
+FOR i FROM 0 TO Set2.length-1 STEP 1  DO
+    sum := sum + Set2[i];
+END_FOR
+ Write("the sum of the distinct elements is"); Write(sum);
+END
+//********************************************************************************************************** */
+//Problem1, Solution2
+ALGORITHM sum_distinct_numbers_2
+VAR
+    Set1, Set2 : ARRAY_OF INTEGER [50];
+    htab: HASH_TABLE<INTEGER,INTEGER>
+    i,j,sum,count :INTEGER :=0;
+BEGIN
+    Write("Enter the first set"); Read(Set1);
+    Write("Enter the second set"); Read(Set2);
+// first we browse the sets to define the count of each character
+//Set1
+    FOR i FROM 0 TO Set1.length -1 STEP 1  DO
+           
+           htab.insert(Set1[i],1);
+    END_FOR
+//Set2
+    FOR i FROM 0 TO Set2.length -1 STEP 1  DO
+       IF (htab.lookup(Set2[i]) = TRUE) THEN
+           count := htab.get(Set2[i]);
+           htab.insert(Set2[i],count+1);
+       ELSE
+           htab.insert(Set2[i],1);
+       END_IF
+    END_FOR  
+// Now we loop the hash table to extract the unique characters and sum them
+//Set1
+   FOR i FROM 0 TO Set1.length -1 STEP 1  DO
+       IF (htab.get(Set1[i]) = 1) THEN
+           sum := sum + Set1[i];
+       END_IF
+   END_FOR
+//Set2
+   FOR i FROM 0 TO Set2.length -1 STEP 1  DO
+       IF (htab.get(Set2[i]) = 1) THEN
+           sum := sum + Set2[i];
+       END_IF
+   END_FOR
+   Write("the sum of the distinct elements is"); Write(sum);
+END
+//********************************************************************************************************** */
+//Problem2, Solution1
+ALGORITHM sum_overlapping_numbers_1
+VAR
+    Set1, Set2 : ARRAY_OF [50];
+    i,j,sum_overlap :INTEGER :=0;
+BEGIN
+    Write("Enter the first set"); Read(Set1);
+    Write("Enter the second set"); Read(Set2);
+//loop the elements of the 1st set comparing each one with all the elements of the 2nd set
+    FOR i FROM 0 TO Set1.length-1 STEP 1  DO
+        equal:=false;
+        FOR j FROM 0 TO Set2.length-1 STEP 1  DO
+           IF (Set1[i] = Set2[j]) THEN   //if we find a common element
+             sum_overlap:=sum_overlap+set2[j]*2; //we add it multiplied by2 to the sum
+           END_IF
+        END_FOR
+    END_FOR
+    Write(" the sum of the overlapping elements is "); Write(sum_overlap);
+END
+//********************************************************************************************************** */
+//Problem2, Solution2
+ALGORITHM sum_overlapping_numbers_2
+VAR
+    Set1, Set2 : ARRAY_OF [50];
+    htab: HASH_TABLE<INTEGER,INTEGER>
+    i,j,sum,count :INTEGER :=0;
+BEGIN
+    Write("Enter the first set"); Read(Set1);
+    Write("Enter the second set"); Read(Set2);
+// first we browse the sets to define the count of each character
+//Set1
+    FOR i FROM 0 TO Set1.length -1 STEP 1  DO
+       IF (htab.lookup(Set1[i]) = TRUE) THEN
+           count := htab.get(Set1[i]);
+           htab.insert(Set1[i],count+1);
+       ELSE
+           htab.insert(Set1[i],1);
+       END_IF
+    END_FOR
+//Set2
+    FOR i FROM 0 TO Set2.length -1 STEP 1  DO
+       IF (htab.lookup(Set2[i]) = TRUE) THEN
+           count := htab.get(Set2[i]);
+           htab.insert(Set2[i],count+1);
+       ELSE
+           htab.insert(Set2[i],1);
+       END_IF
+    END_FOR  
+// Now we loop the hash table to extract the overlapping characters and sum them
+//Set1
+   FOR i FROM 0 TO Set1.length -1 STEP 1  DO
+       IF (htab.get(Set1[i]) != 1) THEN
+           sum := sum + Set1[i];
+       END_IF
+   END_FOR
+//Set2
+   FOR i FROM 0 TO Set2.length -1 STEP 1  DO
+       IF (htab.get(Set2[i]) != 1) THEN
+           sum := sum + Set2[i];
+       END_IF
+   END_FOR
+   Write(" the sum of the overlapping elements is "); Write(sum);
+
+END

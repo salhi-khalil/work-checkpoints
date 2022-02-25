@@ -1,0 +1,27 @@
+body{
+    background-color: blue;
+    color: red; 
+}
+h1,h2,h3{
+    color: rgb(17, 24, 90);
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+.container{
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+p{
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(36, 199, 172);
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+}

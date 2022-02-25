@@ -1,0 +1,107 @@
+/*            */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.sectionname{
+  font-size: x-large; text-align: left; color: rgb(124, 120, 120);
+}
+/*       nav bar   */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #111;
+    color: rgb(255, 65, 65);
+  }
+  /*        intro      */
+  .intro{
+      text-align: center;
+      padding: 100px;
+  }
+  #About{
+    background-color: rgb(223, 223, 223);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 25px;
+  }
+  #Work{
+    background-color: rgb(223, 223, 223);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 25px;
+  }
+  /*    work gallery      */
+  .gallery{
+      background-color: #333;
+      padding: 50px;
+      margin: 100px;
+      margin-top: 50px;
+      border-radius: 25px;
+  }
+.gallery img {
+    display: inline;
+    width: 200px; height: 200px; 
+}
+.gallery img:hover {
+    opacity: 0.5 ; border: 5px solid rgb(250, 110, 110);
+}
+.diys1,.diys2{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background-color: #333;
+  padding: 50px;
+  margin: 100px;
+  margin-top: 50px;
+  border-radius: 25px;
+}
+#Contact{
+  background-color: rgb(223, 223, 223);
+  padding: 50px;
+  margin: 50px;
+  border-radius: 25px;
+}
+textarea {
+  width: 80%;
+  height: 100px;
+  padding: 50px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  background-color: #f8f8f8;
+}
+input[type=text] {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgb(63, 61, 61);
+}
+#Resume{
+  background-color: rgb(223, 223, 223);
+  padding: 50px;
+  margin: 50px;
+  border-radius: 25px;
+}
+footer{
+  text-align: center;
+  letter-spacing: -.3px;
+  border: none;
+  border-top: 1px solid rgb(216, 216, 216);
+  font-size: 20px;
+  color: #ababab;
+  font-weight: 400;
+}

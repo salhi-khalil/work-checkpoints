@@ -1,0 +1,9 @@
+.my-profile{
+    width: 300px;
+  }
+.el{
+    margin: 100px;
+    padding: 20px;
+    background-color: rgb(132, 184, 184, 0.1);
+    border-radius: 10%;
+}  

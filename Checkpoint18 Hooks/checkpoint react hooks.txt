@@ -1,0 +1,31 @@
+Objective
+*********
+In this checkpoint, we are going to create a movie app 
+where you can present your favorite movies or TV shows. 
+We will also be able to use the react hooks.
+_____________________________________________________
+
+Instructions
+************
+1)Create the following components:
+        +MovieCard
+        +MovieList
+        +Filter ( title, rate)
+2)Every movie should have the following attributes: 
+   +title, 
+   +description, 
+   +posterURL, 
+   +rating
+3)The user should be:
+        +Able to add a new movie.
+        +Filter the movies with title/rating.
+_____________________________________________________
+Feedbacks History
+----------------
+May 11th, 10:01 AM
+- the filter by name and by rating is not practical:
+     *when you filter, only filtered films must be displayed
+     *try to change the condition of the filter
+- when you add a new film, 
+the old film already added will be deleted 
+(this is wrong, it must be added to the list)

@@ -1,0 +1,237 @@
+/* let's start */
+*{
+    font-family: 'Roboto', sans-serif;
+    color: #747474;
+    padding: 0px;
+    margin: 0px;
+}
+/*         nav bar elements        */
+nav{
+    padding-top:20px ;
+    padding-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    font-weight: bold;
+    color: b1b1b1;
+    list-style-type: none;
+    display:flex ;
+    justify-content: space-between;
+    width: 30%;
+}
+li:hover {
+
+    color: #00b39b;
+  }
+/*             main             */
+/*            intro         */
+h1{
+    font-weight: initial;
+    color: #00b39b;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    
+}
+.introduction{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.description p{
+width: 40%;
+margin: .8em 0;
+line-height: 1.75;
+font-weight: 400;
+font-family: Roboto,Arial,sans-serif;
+color: #747474;
+}
+.description{
+    display: flex;
+    justify-content: space-around;
+}
+/*            patients***doctors***clinics         */
+/*            the value of the green color=#00b39b   the blue=#3d83df   the deep blue=#1b2734       */
+.patients{
+    text-align: left;
+    padding:2.5%;
+    background-color:#00b39b;
+    border-radius: 20px;
+    width: 25%;
+}
+.doctors{
+    text-align: left;
+    padding:2.5%;
+    background-color: #3d83df;
+    border-radius: 20px;
+    width: 25%;
+}
+.clinics{
+    text-align: left;
+    padding:2.5%;
+    background-color: #1b2734 ;
+    border-radius: 20px;
+    width: 25%;
+}
+.patientsdoctorsclinics{
+    padding-bottom: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.patientsdoctorsclinics h3{
+    color: white;
+    font-family: Work Sans,Arial,sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: -.3px;
+}
+.patientsdoctorsclinics h4{
+    color: white;
+    font-size: 1.5em;
+    font-weight: lighter;
+    line-height: 1.2;
+    margin: 0;
+    letter-spacing: -.3px;
+}
+/*            global company local culture        */
+.globalcompany{
+    padding-bottom: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logos img{
+    display: flex;
+    width: 120px; height: 30px;
+}
+/*            stats The world's biggest healthcare platform         */
+/* background color #daf7f7   */
+.biggest{
+    display: flex;
+    background-color: #daf7f7;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    padding-top:20px ; padding-bottom: 20px ;
+}
+.titlecardsrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.titlecardsrow div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 25px;
+width: 150px; height: 200px;
+border-radius: 10px;
+margin: 10px;
+}
+.bigdescription{
+    text-align: left;
+    padding: 80px;
+    width: 50%;
+    margin-right: 30px;
+   
+}
+/*         Improve the lives of millions. Change yours forever  */
+.improvedesc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+.improvedesc h1{
+    margin: 1em 0;
+    font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+}
+}
+.improvedesc p{
+    font-weight: 400;
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+    
+    max-width: 415px;
+    font-size: .875em;
+    font-weight: 400;
+    line-height: 1.7142857143;
+}
+.button{
+    display: inline-block;
+    vertical-align: middle;
+    
+    border-radius: 4px;
+    padding: 5px;
+    background: #3d83df;
+    font-family: Roboto,Arial,sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+.warsaw{
+    border-radius: 20px;
+    margin: 5px;
+}
+.warsawbutton{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.gallery{
+    padding-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*         join us      */
+.join{
+    padding-bottom: 100px;
+    padding-top: 100px;
+    text-align: center;
+}
+.join h2{
+    font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    font-size: 2.1428571429em;
+    color: #333;
+    margin-bottom: .75em;
+}
+
+/*         footer       */
+footer{
+    text-align: center;
+    letter-spacing: -.3px;
+    border: none;
+    border-top: 1px solid rgb(216, 216, 216);
+    font-size: 12px;
+    color: #ababab;
+    font-weight: 400;
+    font-family: Roboto,Arial,sans-serif;
+}

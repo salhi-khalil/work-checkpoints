@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+.user{
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(128, 120, 120, 0.25);
+}
+.userList{
+  width: 60%;
+  margin: auto;
+}

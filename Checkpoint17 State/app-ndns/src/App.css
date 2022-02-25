@@ -1,0 +1,17 @@
+.App {
+  margin: auto;
+  text-align: center;
+}
+.profileElements{
+  padding: 50px;
+}
+
+.profile{
+  padding: 100px;
+  margin: 100px;
+  text-align: center;
+}
+.int{
+  color: red;
+}
+

@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+code {
+  font-family: "Roboto";
+}
+p {
+  background-color: rgba(47, 35, 59, 0.8);
+}
+h1 {
+  color: rgba(47, 35, 59);
+  font-family: "Engagement", cursive;
+  font-size: 150%;
+}
+.Survey {
+  margin-top: 100px;
+}
+
+Form {
+  background-color: rgb(143, 100, 168, 0.1);
+  padding: 20px;
+  margin: auto;
+  width: 80%;
+  font-family: "Dancing Script", cursive;
+  font-size: larger;
+  text-align: left;
+  font-weight: bold;
+  color: rgb(143, 100, 168);
+}
+
+footer {
+  margin-top: 100px;
+  background-color: rgba(39, 28, 46, 0.2);
+  border-top: #dfdfdf solid 1px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

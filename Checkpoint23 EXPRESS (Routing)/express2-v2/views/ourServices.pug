@@ -1,0 +1,37 @@
+extends layout 
+block content
+   div.container
+      if(isopen === true)
+         div.container
+            h2 Our Services
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sit tempora quasi eveniet totam minima, repellat illo, fuga magnam fugit possimus reiciendis doloribus? Delectus iure commodi voluptatem nihil, amet ducimus!
+            br
+            hr
+         div.container
+            div.row
+               div.col 
+                  div(class="card" style="width: 18rem;")
+                     img(src="https://images.squarespace-cdn.com/content/v1/5c4d776645776efa53c56b7e/1548762924174-EQYYQ4WFSHOKM1O3QONO/ke17ZwdGBToddI8pDm48kAf-OpKpNsh_OjjU8JOdDKBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwkCFOLgzJj4yIx-vIIEbyWWRd0QUGL6lY_wBICnBy59Ye9GKQq6_hlXZJyaybXpCc/Our+Services.png" class="card-img-top" alt="...")
+                     div.card-body
+                        h3 Service 1
+                        p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+               div.col 
+                  div(class="card" style="width: 18rem;")
+                     img(src="https://images.squarespace-cdn.com/content/v1/5c4d776645776efa53c56b7e/1548762924174-EQYYQ4WFSHOKM1O3QONO/ke17ZwdGBToddI8pDm48kAf-OpKpNsh_OjjU8JOdDKBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwkCFOLgzJj4yIx-vIIEbyWWRd0QUGL6lY_wBICnBy59Ye9GKQq6_hlXZJyaybXpCc/Our+Services.png" class="card-img-top" alt="...")
+                     div.card-body
+                        h3 Service 2
+                        p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+               div.col 
+                  div(class="card" style="width: 18rem;")
+                     img(src="https://images.squarespace-cdn.com/content/v1/5c4d776645776efa53c56b7e/1548762924174-EQYYQ4WFSHOKM1O3QONO/ke17ZwdGBToddI8pDm48kAf-OpKpNsh_OjjU8JOdDKBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwkCFOLgzJj4yIx-vIIEbyWWRd0QUGL6lY_wBICnBy59Ye9GKQq6_hlXZJyaybXpCc/Our+Services.png" class="card-img-top" alt="...")
+                     div.card-body
+                        h3 Service 3
+                        p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            hr
+            
+         div.container.container2.d-flex.justify-content-center
+            iframe(width="853" height="480" src="https://www.youtube.com/embed/lwsk_JGa0bs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+      else 
+         h1 Sorry We'are closed!
+         p The web application is only available during working hours (Monday to Friday,  from 9 to 17).
+         img(src="https://www.pngkey.com/png/full/14-142291_this-free-icons-png-design-of-sorry-were.png" width="500px" alt="get in touch")
